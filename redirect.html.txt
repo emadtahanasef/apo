@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automatic Redirect</title>
+<script>
+window.onload = function() {
+    // Array of URLs to redirect to
+    var urls = var urls = [
+    "https://skip2link.com/1",
+    "https://skip2link.com/2",
+    "https://skip2link.com/3",
+    "https://skip2link.com/4",
+    "https://skip2link.com/5",
+    "https://skip2link.com/6",
+    "https://skip2link.com/7",
+    "https://skip2link.com/8",
+    "https://skip2link.com/9",
+    "https://skip2link.com/10",
+    "https://skip2link.com/11",
+    "https://skip2link.com/12",
+    "https://skip2link.com/13",
+    "https://skip2link.com/14"
+];
+
+    // Choose a random URL from the array
+    var randomIndex = Math.floor(Math.random() * urls.length);
+    var randomUrl = urls[randomIndex];
+
+    // Redirect to the random URL after a delay
+    setTimeout(function() {
+        window.location.href = randomUrl;
+    },5000); // Redirect after 5 seconds (adjust as needed)
+}
+</script>
+</head>
+<body>
+<p>Redirecting to a random page...</p>
+</body>
+</html>
